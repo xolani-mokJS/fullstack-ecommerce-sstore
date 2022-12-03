@@ -1,7 +1,7 @@
 <?php
 include('../includes/connect.php');
 
-if (isset($_POST['add_products'])){
+if (isset($_POST['insert_product'])){
 
     $product_name = $_POST['product_name'];
     $product_description = $_POST['product_description'];
@@ -17,18 +17,19 @@ if (isset($_POST['add_products'])){
     if ($product_description == '' or $product_price == '' or $product_image == '' or $product_name == '')
     {
         echo '<script type="text/javascript> alert ("Please fill all available fields"); </script>';
+        exit();
     } else{
         move_uploaded_file($product_image_temp, "./product-images/$product_image");
         
         //add product
-        $sql = "INSERT INTO `products` (product_name, product_description, product_image, product_price, date_now, product_status) VALUES ('$product_name', '$product_description', '$product_image', '$product_price', 'NOW()' ,'$product_status')";
+        $sql = "insert into `products` (product_name, product_description, product_image, product_price, date, product_status) values ('$product_name', '$product_description', '$product_image', '$product_price', NOW() ,'$product_status')";
 
         $result=mysqli_query($con, $sql);
 
         if ($result === TRUE){
-                echo '<script type="text/javascript> alert ("successfully added products"); </script>';
+                echo "successfully added products";
             } else  {
-                echo '<script type="text/javascript> alert ("unsuccessful"); </script>'; 
+                echo "unsuccessful"; 
             }
         }
 }
@@ -78,7 +79,7 @@ if (isset($_POST['add_products'])){
 
         <!-- submit  -->
         <div class="form-outline mb-4 w-50 m-auto">
-            <input type="submit" name="add_products" id="add_products" class="btn btn-info mb-3 p-3" value="add products"> 
+            <input type="submit" name="insert_product" id="insert_product" class="btn btn-info mb-3 p-3" value="insert_product"> 
         </div>
 
    

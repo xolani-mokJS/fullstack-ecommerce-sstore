@@ -1,16 +1,11 @@
 <?php
+$con = mysqli_connect('localhost', 'root', '', 'product_database');
 
-$con = new mysqli('localhost', 'root', '', 'onlineshop' );
-
-if($con){
-    echo 'Connecting successfully';
-} else  {  
-    echo 'Connecting unsuccessful';
+    if($con->connect_error){
+        die("Connection failed: " . $con->connect_error);
+        echo 'Connecting unsuccessful';
+    } else  {  
+    echo 'Connecting successful';
     }
-
-
-
-
-
 
 ?>
