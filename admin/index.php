@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../style/styles.css">
     <script src="https://kit.fontawesome.com/45c92c3ef1.js" crossorigin="anonymous"></script>
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin dashboard</title>
 </head>
@@ -33,9 +33,21 @@
             <div class="col-md-12 bg-secondary p-1">
                  <p class="text-light">Admin name</p>
             </div>
+            <div class="button text-center">
+             <button><a href="add_products.php" class="nav-link">add products</a> </button>
+             <button><a href="" class="nav-link">users</a></button>
+             <button><a href="" class="nav-link"> Logout</a></button>
+            </div>
         </div>
     </div>
 
+
+    <section class="footer-section">
+        <div class="logo">Galaxy Men</div>
+        <div class="footer-items">
+            copyright 2022
+        </div>
+    </section>
 
 
 <!-- JavaScript Bundle with Popper -->
