@@ -1,6 +1,7 @@
 <?php
 
-$con=mysqli_connect('localhost', 'root', '', 'onlineshop' );
+$con = new mysqli('localhost', 'root', '', 'onlineshop' );
+
 if($con){
     echo 'Connecting successfully';
 } else  {  

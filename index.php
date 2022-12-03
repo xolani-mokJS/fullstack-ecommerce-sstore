@@ -93,7 +93,7 @@
          <div class="collection-section">
             <h1>Summer collection</h1> 
             <div class="collection">
-             <div class="card" style="width: 18rem;">
+             <div class="card m-15" style="width: 18rem;">
                  <img src="./images/item1.png" class="card-img-top" alt="...">
                  <div class="card-body">
                    <h5 class="card-title">Item name</h5>
@@ -102,6 +102,70 @@
                    <a href="#" class="btn btn-secondary">view similar</a>
                  </div>
                </div>
+               <div class="card" style="width: 18rem;">
+                 <img src="./images/item1.png" class="card-img-top" alt="...">
+                 <div class="card-body">
+                   <h5 class="card-title">Item name</h5>
+                   <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                   <a href="#" class="btn btn-primary">add to cart</a>
+                   <a href="#" class="btn btn-secondary">view similar</a>
+                 </div>
+               </div>
+               <div class="card" style="width: 18rem;">
+                 <img src="./images/item1.png" class="card-img-top" alt="...">
+                 <div class="card-body">
+                   <h5 class="card-title">Item name</h5>
+                   <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                   <a href="#" class="btn btn-primary">add to cart</a>
+                   <a href="#" class="btn btn-secondary">view similar</a>
+                 </div>
+               </div>
+               <div class="card" style="width: 18rem;">
+                 <img src="./images/item1.png" class="card-img-top" alt="...">
+                 <div class="card-body">
+                   <h5 class="card-title">Item name</h5>
+                   <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                   <a href="#" class="btn btn-primary">add to cart</a>
+                   <a href="#" class="btn btn-secondary">view similar</a>
+                 </div>
+               </div>
+               <div class="card" style="width: 18rem;">
+                 <img src="./images/item1.png" class="card-img-top" alt="...">
+                 <div class="card-body">
+                   <h5 class="card-title">Item name</h5>
+                   <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                   <a href="#" class="btn btn-primary">add to cart</a>
+                   <a href="#" class="btn btn-secondary">view similar</a>
+                 </div>
+               </div>
+               <div class="card" style="width: 18rem;">
+                 <img src="./images/item1.png" class="card-img-top" alt="...">
+                 <div class="card-body">
+                   <h5 class="card-title">Item name</h5>
+                   <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                   <a href="#" class="btn btn-primary">add to cart</a>
+                   <a href="#" class="btn btn-secondary">view similar</a>
+                 </div>
+               </div>
+               <div class="card" style="width: 18rem;">
+                 <img src="./images/item1.png" class="card-img-top" alt="...">
+                 <div class="card-body">
+                   <h5 class="card-title">Item name</h5>
+                   <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                   <a href="#" class="btn btn-primary">add to cart</a>
+                   <a href="#" class="btn btn-secondary">view similar</a>
+                 </div>
+               </div>
+               <div class="card" style="width: 18rem;">
+                 <img src="./images/item1.png" class="card-img-top" alt="...">
+                 <div class="card-body">
+                   <h5 class="card-title">Item name</h5>
+                   <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                   <a href="#" class="btn btn-primary">add to cart</a>
+                   <a href="#" class="btn btn-secondary">view similar</a>
+                 </div>
+               </div>
+               
             </div>
          </div>
     </section>

@@ -19,18 +19,18 @@ if (isset($_POST['add_products'])){
         echo '<script type="text/javascript> alert ("Please fill all available fields"); </script>';
     } else{
         move_uploaded_file($product_image_temp, "./product-images/$product_image");
-
+        
         //add product
-        $insert_products = "insert into `products` (product_name, product_description, product_image, product_price, date, status) values ('$product_name', '$product_description', '$product_image', '$product_price', NOW(),'$product_status')";
+        $sql = "INSERT INTO `products` (product_name, product_description, product_image, product_price, date_now, product_status) VALUES ('$product_name', '$product_description', '$product_image', '$product_price', 'NOW()' ,'$product_status')";
 
-        $result_query=mysqli_query($con, $insert_products);
+        $result=mysqli_query($con, $sql);
 
-        if ($result_query){
-            echo '<script type="text/javascript> alert ("successfully added products"); </script>';
-        } else  {
-            echo '<script type="text/javascript> alert ("unsuccessful"); </script>'; 
+        if ($result === TRUE){
+                echo '<script type="text/javascript> alert ("successfully added products"); </script>';
+            } else  {
+                echo '<script type="text/javascript> alert ("unsuccessful"); </script>'; 
+            }
         }
-    }
 }
 ?>
 
