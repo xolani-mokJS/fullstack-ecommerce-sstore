@@ -6,14 +6,31 @@ if (isset($_POST['add_products'])){
     $product_name = $_POST['product_name'];
     $product_description = $_POST['product_description'];
     $product_price = $_POST['product_price'];
+    $product_status = 'true';
 
     // images 
-    $product_image = $_POST['product_image']['name'];
+    $product_image = $_FILES['product_image']['name'];
 
     //temp name
-    $product_image = $_POST['product_image']['tmp_name'];
+    $product_image_temp = $_FILES['product_image']['tmp_name'];
 
-    
+    if ($product_description == '' or $product_price == '' or $product_image == '' or $product_name == '')
+    {
+        echo '<script type="text/javascript> alert ("Please fill all available fields"); </script>';
+    } else{
+        move_uploaded_file($product_image_temp, "./product-images/$product_image");
+
+        //add product
+        $insert_products = "insert into `products` (product_name, product_description, product_image, product_price, date, status) values ('$product_name', '$product_description', '$product_image', '$product_price', NOW(),'$product_status')";
+
+        $result_query=mysqli_query($con, $insert_products);
+
+        if ($result_query){
+            echo '<script type="text/javascript> alert ("successfully added products"); </script>';
+        } else  {
+            echo '<script type="text/javascript> alert ("unsuccessful"); </script>'; 
+        }
+    }
 }
 ?>
 
