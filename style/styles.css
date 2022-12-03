@@ -3,13 +3,15 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    border: 1px solid red;
+    color: black;
+    font-family: "poppins";
 }
 
 /* header - hero section */
 
 .header-section{
     background-color: #FEF8F8;
+    margin-bottom: 55px;
 }
 
 .navbar{
@@ -19,8 +21,14 @@
     justify-content: space-between;
     margin-left: 135px;
     margin-right: 135px;
-    margin-top: 34px;
+    padding-top: 35px;
 }
+
+.navbar-dark{
+    background-color: #BC66EC;
+    color: black !important;
+}
+
 
 .logo{
     color: #BC66EC;
@@ -46,7 +54,7 @@ li{
     margin-left:135px;
     margin-right: 135px;
     margin-top: 35px;
-    bottom: 35px;
+    margin-bottom: 35px;
     display: flex;
 }
 
@@ -141,4 +149,33 @@ li{
     font-size: 22px;
     color: #BC66EC;
     font-weight: bolder;
+}
+
+.section{
+    padding: 35px;
+    background-color: #e7cef4;
+}
+.collection-section{
+    margin: 35px;
+}
+
+.collection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h1{
+    padding: 35px;
+}
+
+
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEF8F8;
+    padding: 35px;
 }
