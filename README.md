@@ -1,2 +1,2 @@
-# fullstack-ecommerce-store
-An online store (full stack) built using html, css, javascript, php, and MySql
+# full-stack-e-commerce-store
+An online store (full stack) built using html, CSS, JavaScript, PHP, and MySQL

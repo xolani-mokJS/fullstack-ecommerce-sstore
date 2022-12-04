@@ -1,5 +1,0 @@
-<?php
-// add to cart 
-
-
-?>
